@@ -4,18 +4,19 @@
 Summary:	SDL1.2 compat library (SDL2 to SDL1.2 compatibility wrapper)
 Summary(pl.UTF-8):	Biblioteka SDL1.2 (warstwa kompatybilności SDL2 z SDL1.2)
 Name:		sdl12-compat
-Version:	1.2.60
+Version:	1.2.64
 Release:	1
 License:	Zlib (BSD-like)
 Group:		Libraries
 Source0:	https://github.com/libsdl-org/sdl12-compat/archive/refs/tags/release-%{version}.tar.gz
-# Source0-md5:	a539a4a3ceb3d09b7bf312d96210443c
+# Source0-md5:	c0ca71db831525dda0d676920c729023
 URL:		https://www.libsdl.org/
 BuildRequires:	SDL2-devel
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 Obsoletes:	SDL <= 1.2.15
+Provides:	SDL
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
